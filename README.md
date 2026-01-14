@@ -38,7 +38,7 @@ mv example.env production.env
 ```
 
 **Important:** After renaming the file:
-1. Open `production.env` and enter your own values for the database credentials
+1. Open `production.env` and enter your own values.
 2. Update the path to the environment file in `docker-compose.yml` (if it still references `example.env`)
 
 ### Start the Container
