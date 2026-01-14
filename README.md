@@ -3,31 +3,54 @@
 ## Table of Contents
 
 1. [Overview](#overview)
-2. [Requirements](#requirements)
-3. [Installation & Startup](#installation--startup)
-4. [Environment Variables](#environment-variables)
-5. [Checking Database Connection](#checking-database-connection)
-6. [Useful Commands](#useful-commands)
-7. [Troubleshooting](#troubleshooting)
+2. [Prerequisites](#prerequisites)
+3. [Quickstart](#quickstart)
+4. [Usage](#usage)
 
 ## Overview
 
 This project provides a local WordPress environment with a MySQL database using Docker Compose.
 
-## Requirements
+## Prerequisites
 
 - Docker
 - Docker Compose
 
-## Installation & Startup
+## Quickstart
+
+```bash
+git clone https://github.com/MarcoLenschau/Wordpress-Container 
+```
+
+### Change Directory
+
+```bash
+cd Wordpress-Container
+```
+
+### Create .env file
+
+```bash
+mv example.env production.env
+```
+
+**Important:** After renaming the file:
+1. Open `production.env` and enter your own values for the database credentials
+2. Update the path to the environment file in `docker-compose.yml` (if it still references `example.env`)
+
+### Start the Container
 
 ```bash
 docker-compose up -d
 ```
 
+### How to access the App
+
 Afterwards, WordPress is available at [http://localhost:8080](http://localhost:8080).
 
-## Environment Variables
+## Usage
+
+### Environment Variables
 
 The most important variables are set in the `.env` files:
 
@@ -40,7 +63,7 @@ The most important variables are set in the `.env` files:
 - MYSQL_PASSWORD
 - MYSQL_RANDOM_ROOT_PASSWORD
 
-## Checking Database Connection
+### Checking Database Connection
 
 - In the browser: If the connection is successful, WordPress loads normally. If there are problems, you will see "Error establishing a database connection".
 - In the terminal: Check logs with
@@ -49,14 +72,14 @@ The most important variables are set in the `.env` files:
   ```
 - In the backend: Is login to the WordPress admin area possible?
 
-## Useful Commands
+### Useful Commands
 
 - Start containers: `docker-compose up -d`
 - Stop containers: `docker-compose down`
 - Show logs: `docker-compose logs wordpress`
 
-## Troubleshooting
+### Troubleshooting
 
 - Check environment variables and credentials
 - Check if the database is running: `docker-compose ps`
-- Check logs for error messages
+- Check logs for error messagessss
