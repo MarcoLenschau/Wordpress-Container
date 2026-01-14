@@ -15,6 +15,7 @@ This project provides a local WordPress environment with a MySQL database using 
 
 - Docker
 - Docker Compose
+- Git
 
 ## Quickstart
 
