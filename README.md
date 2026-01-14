@@ -19,6 +19,8 @@ This project provides a local WordPress environment with a MySQL database using 
 
 ## Quickstart
 
+### Clone the repository
+
 ```bash
 git clone https://github.com/MarcoLenschau/Wordpress-Container 
 ```
