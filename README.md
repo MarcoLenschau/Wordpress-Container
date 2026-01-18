@@ -12,8 +12,11 @@ This project provides a local WordPress environment with a MySQL database using 
 
 - Docker
 - Docker Compose
+- Git
 
 ## Quickstart
+
+### Clone the repository
 
 ```bash
 git clone https://github.com/MarcoLenschau/Wordpress-Container 
