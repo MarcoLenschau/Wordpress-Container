@@ -16,28 +16,28 @@ This project provides a local WordPress environment with a MySQL database using 
 
 ## Quickstart
 
-### Clone the repository
+1. Clone the repository
 
 ```bash
 git clone https://github.com/MarcoLenschau/Wordpress-Container 
 ```
 
-### Change Directory
+2. Change Directory
 
 ```bash
 cd Wordpress-Container
 ```
 
-### Create .env file
+3. Create .env file
 
 ```bash
 mv example.env production.env
 ```
 
-**Important:** After renaming the file:
-1. Open `production.env` and enter your own values for the database credentials
+> [!IMPORTANT]
+> Open `production.env` and enter your own values for the database credentials
 
-### Start the Container
+4. Start the Container
 
 ```bash
 docker-compose up -d
@@ -69,7 +69,6 @@ The most important variables are set in the `.env` files:
   ```bash
   docker-compose logs wordpress
   ```
-- In the backend: Is login to the WordPress admin area possible?
 
 ### Useful Commands
 
