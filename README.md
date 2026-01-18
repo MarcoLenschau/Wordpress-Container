@@ -1,15 +1,12 @@
 # WordPress with Docker Compose
 
+This project provides a local WordPress environment with a MySQL database using Docker Compose.
+
 ## Table of Contents
 
-1. [Overview](#overview)
-2. [Prerequisites](#prerequisites)
-3. [Quickstart](#quickstart)
-4. [Usage](#usage)
-
-## Overview
-
-This project provides a local WordPress environment with a MySQL database using Docker Compose.
+1. [Prerequisites](#prerequisites)
+2. [Quickstart](#quickstart)
+3. [Usage](#usage)
 
 ## Prerequisites
 
@@ -36,7 +33,6 @@ mv example.env production.env
 
 **Important:** After renaming the file:
 1. Open `production.env` and enter your own values for the database credentials
-2. Update the path to the environment file in `docker-compose.yml` (if it still references `example.env`)
 
 ### Start the Container
 
@@ -46,7 +42,7 @@ docker-compose up -d
 
 ### How to access the App
 
-Afterwards, WordPress is available at [http://localhost:8080](http://localhost:8080).
+Afterwards, WordPress is available at http://<your_ip>/8080.
 
 ## Usage
 
